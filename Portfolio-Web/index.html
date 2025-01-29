@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankesh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .first-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+
+        .first-section>div {
+            width: 30%;
+        }
+
+        .left-section {
+            font-size: 3rem;
+        }
+
+        .left-section .buttons{
+            padding: 50px 0;
+        }
+
+        .left-section .btn {
+            padding: 12px ;
+            background: #5e61bf;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .left-section .git{
+            padding: 12px ;
+            background: #5e61bf;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .right-section img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .second-section {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .second-section h1 {
+            font-size: 1.9rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #4d4a84;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .second-section .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 80px 0;
+            display: flex;
+        }
+
+        .second-section .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 200px;
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -61px;
+            left: -25px;
+        }
+
+        .vertical-text {
+            position: relative;
+            top: 46px;
+            width: 270px;
+            left: -120px;
+        }
+
+        .exp-text {
+            position: relative;
+            color: rgb(157, 137, 137);
+            right: -28px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 50px;
+            width: 300px;
+            left: -113px;
+            font-size: 0.95rem;
+            color: #909090;
+        }
+
+        footer {
+            background-color: #121021;
+        }
+
+        .footer>div {
+            width: 123px;
+        }
+
+        .flex {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ankesh's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first-section">
+            <div class="left-section">
+                Hi, I am <span class="purple">Ankesh</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="git">Visit Github</button>
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="web.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="second-section">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="oasis.png" alt="">
+                    <div class="vertical-text">
+                        Web Developer at Oasis Infobyte <span class="exp-text">(Oct 2024 - Dec 2024)</span>
+                    </div>
+                    <div class="vertical-desc">
+                        During my internship at Oasis Infobyte, I successfully created an eCommerce website clone
+                        utilizing HTML and CSS. This project allowed me to apply and enhance my web development skills
+                        in a practical setting.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex">
+            <div class="first">
+                <h3>Skills I have learned so far..</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>C Programming</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+            <div class="third"></div>
+            <div class="fourth"></div>
+        </div>
+
+        <div class="footer-rights">
+            Copyright &#169; www.ankesh.com | All Rights Reserved
+        </div>
+
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', '&amp; Software Engineer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
